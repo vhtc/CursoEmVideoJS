@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 005</title>
+    <style>
+        body {
+            background-color: grey;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>DOM</h1>
+    <p>Resultado</p>
+    <p>aprendendo <strong>DOM</strong></p>
+    <div id="msg">Botão</div> <!--via id-->
+    <div name="mensagem">Botão name</div> <!--via id-->
+    <div id="teste">Botão teste</div> <!--via id-->
+
+    <script>
+        var corpo = window.document.body
+        var p1 = window.document.getElementsByTagName('p')[0]
+        var p2 = window.document.getElementsByTagName('p')[1]
+        window.document.write('Está escrito assim '+p1.innerText+'</br>') //inner text vem sem a formataçao html
+        window.document.write('Está escrito assim ' +p2.innerHTML+'</br>') //innerhtml vem com style
+        p1.style.color = 'blue'
+
+        var d = window.document.getElementById('msg')
+        d.style.backgroundColor='green'
+
+        var e = window.document.getElementsByName('mensagem')[0]
+        e.style.backgroundColor='blue'
+
+        var f = window.document.querySelector('div#teste')
+        f.style.backgroundColor='red'
+        // d.innerText = 'inserindo via DOM...' - inserindo via DOM na variavel D = id msg
+        // corpo.style.backgroundColor = 'black'
+        //div #
+        //classe .
+
+    </script>
+</body>
+</html>
