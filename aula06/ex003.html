@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 003</title>
+    <style>
+        /*Style*/
+        body {
+            background-color: rgb(53, 51, 51);
+        }
+
+        h1 {
+            color: rgb(27, 94, 27);
+            font: normal 25pt Arial;
+        }
+
+        p {
+            color: rgb(7, 87, 60);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>vhtc.</h1> <!--titulo do texto-->
+    <p>Cientista Computacional</p> <!--paragrafo-->
+    <script>
+        var n1 = Number(window.prompt("Primeiro numero"))
+        var n2 = Number(window.prompt("Segundo numero"))
+        //NumberparseInt(n), NumberparseFloat(n), Number(n) - o próprio javascript decide qual tipo de number será
+        //String(n), 
+        var nomeUsuario = 'Tuy'
+        var soma = n1 + n2
+        var subtracao1 = n1 - n2
+        var subtracao2 = n2 - n1
+        var multiplicacao = n2 * n1
+        var divisao1 = n1 / n2
+        var divisao2 = n2 / n1
+
+        alert(
+            `Usuario ${nomeUsuario}, Letras ${nomeUsuario.length}, UpperCase ${nomeUsuario.toUpperCase()}, LowerCase ${nomeUsuario.toLowerCase()} \n` + //tudo para maiusculo e tudo para minusculo.
+            'Soma: ' + n1 + '+' + n2 + '=' + soma + '\n' + //utilizando normalidade do javascript
+            `Subtração: ${n1} - ${n2} = ${subtracao1}\n` + //utilizando crase
+            `Subtração: ${n2} - ${n1} = ${subtracao2}\n` +
+            `Multiplicação: ${n1} * ${n2} = ${multiplicacao}\n` +
+            `Divisão: ${n1} / ${n2} = ${divisao1}\n` +
+            `Divisão: ${n2} / ${n1} = ${divisao2}\n`
+        )
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 004</title>
+    <style>
+        body {
+            background-color: gray;
+            font: normal 20pt Arial;
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+        var nome = window.prompt("Qual seu nome?")
+        var idade = Number(window.prompt("Qual sua idade?"))
+        var salario = Number(window.prompt("Qual seu salário? *Sem pontuações e sem vírgulas*"))
+
+        var idadeDias = idade * 365
+        var idadeHoras = idadeDias * 24
+        var idadeMinutos = idadeHoras * 60
+
+        document.write(`Olá <strong>${nome}</strong>, seu nome tem ${nome.length} letras </br>`)
+        document.write(`Maiúsculo: ${nome.toUpperCase()} </br>`)
+        document.write(`Minúsculo: ${nome.toLowerCase()} </br>`)
+        document.write(`Idade = ${idade} anos - ${idadeDias} dias - ${idadeHoras.toFixed(2)} horas - ${idadeMinutos.toFixed(2).replace('.', ',')} minutos </br>`)
+        document.write(`Salário = ${salario.toLocaleString('pt-BR', {style: 'currency', currency:'BRL'})}`)
+
+        // write - Escrever na tela
+        // </br>> - escrever e pular uma linha (break roll)
+        // <strong>NEGRITO</strong>
+        // .toUpperCase(), .toLowerCase()
+        // .tofixed(2) fixar as casas decimais
+        // .replace() trocar um pelo outro na casas decimais
+        // ${salario.toLocaleString('pt-BR', {style: 'currency', currency:'BRL'})} -- colocar automatico o tipo de moeda, as pontuações e virgulas do monetário
+    </script>
+</body>
+</html>
