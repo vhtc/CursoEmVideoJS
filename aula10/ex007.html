@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 10 Exercício 007</title>
+    <style>
+        body {
+            text-align: center;
+        }
+
+        h1 {
+            font: normal 15pt arial;
+        }
+
+        input.number {
+            margin: auto;
+        }
+
+        div#res {
+            margin-top: 10px;
+        }
+
+        div.painelcalculo {
+            width: 500px;
+            margin: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="painelcalculo">
+        <h1> <strong>Calculadora</strong> Simples</h1>
+        <input class="number" type="number" name="n1" id="n1">
+        <input class="number" type="number" name="n2" id="n2">
+        <div>
+            </br>
+            <input type="button" value="Somar" onclick="somar()">
+            <input type="button" value="Subtrair" onclick="subtrair()">
+            <input type="button" value="Multiplicar" onclick="multiplicar()">
+            <input type="button" value="Dividir" onclick="dividir()">
+            <input type="button" value="Limpar" onclick="limpar()">
+
+
+        </div>
+    </div>
+    <div id="res">Resultado</div>
+
+    <script>
+        function somar() {
+            var tn1 = Number(window.document.getElementById('n1').value)
+            var tn2 = Number(window.document.getElementById('n2').value)
+            var tres = window.document.getElementById('res')
+            var soma = tn1 + tn2
+            tres.innerText = `${tn1} + ${tn2} = ${soma}`
+        }
+
+        function subtrair() {
+            var tn1 = Number(window.document.getElementById('n1').value)
+            var tn2 = Number(window.document.getElementById('n2').value)
+            var tres = window.document.getElementById('res')
+            var subtracao1 = tn1 - tn2
+            var subtracao2 = tn2 - tn1
+            tres.innerText = `${tn1} - ${tn2} = ${subtracao1} \n ${tn2} - ${tn1} = ${subtracao2}`
+        }
+
+        function multiplicar() {
+            var tn1 = Number(window.document.getElementById('n1').value)
+            var tn2 = Number(window.document.getElementById('n2').value)
+            var tres = window.document.getElementById('res')
+            var multiplicacao = tn1 * tn2
+            tres.innerText = `${tn1} * ${tn2} = ${multiplicacao}`
+        }
+
+        function dividir() {
+            var tn1 = Number(window.document.getElementById('n1').value)
+            var tn2 = Number(window.document.getElementById('n2').value)
+            var tres = window.document.getElementById('res')
+            var divisao1 = tn1 / tn2
+            var divisao2 = tn2 / tn1
+            tres.innerText = `${tn1} / ${tn2} = ${divisao1.toFixed(2)} \n ${tn2} / ${tn1} = ${divisao2.toFixed(2)}`
+
+        }
+
+        function limpar() {
+            window.document.getElementById('n1').value =''
+            window.document.getElementById('n2').value =''
+            window.document.getElementById('res').innerText = 'Resultado'
+        }
+    </script>
+</body>
+
+</html>

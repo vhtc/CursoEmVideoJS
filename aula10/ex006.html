@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula10 Exercício 006</title>
+    <style>
+        div#area {
+            font: normal 15pt Arial;
+            background: green;
+            color: white;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            /* altura do texto*/
+            text-align: center;
+            /*alinhamento do texto direita meio esquerda*/
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="area">
+        Interaja
+    </div>
+    <!--mouseenter - entrar na div
+        mouseout - sair da <div></div>
+        mousemove - movimentar dentro da div
+        mousedow - segurar com o mousedow
+        mouseup - soltar clique do mouse
+        click - clicar rapido 
+        https://developer.mozilla.org/en-US/docs/Web/Events - eventos DOM
+    -->
+    <script>
+        var a = window.document.getElementById('area') //problema de escopo de memória
+        a.addEventListener('click', clicar) //lista de eventos para não deixar o html sujo
+        a.addEventListener('mouseenter', entrar)
+        a.addEventListener('mouseout', sair)
+
+        function clicar() {
+            a.innerText = "Clicou"
+            a.style.background = "red"
+        }
+        function entrar() {
+            a.innerText = "Entrou"
+        }
+        function sair() {
+            a.innerText = "Saiu"
+            a.style.background = "green"
+        }
+    </script>
+</body>
+
+</html>
