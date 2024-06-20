@@ -1,0 +1,52 @@
+body {
+    background-color: rgb(2, 49, 49);
+}
+
+button{
+    margin: 2px;
+    width: 100px;
+}
+
+#painelCompleto {
+    background-color: aquamarine;
+    display: flex; /*Posicionar o display onde quiser*/
+    flex-direction: row; /*Posicionamento em formas de linhas*/
+    width: 600px;
+    margin: auto;
+    /* flex-wrap: nowrap; */
+}
+
+#painelBotoes {
+    background-color: beige;
+    margin: 1%;
+    width: 250px;
+    height: auto;
+    text-align: center;
+    align-items: center;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+#painelPesquisaTv {
+    margin: 1%;
+    width: 500px;
+    height: auto;
+    background-color: aqua;
+    text-align: center;
+    padding: 10px;
+}
+
+#painelPesquisa {
+    background-color: blueviolet;
+    margin: 10px;
+    padding: 10%;
+    display: flex;
+    flex-direction: row;
+}
+
+#painelTV {
+    background-color: blue;
+    margin: 10px;
+    padding: 10%;
+}
