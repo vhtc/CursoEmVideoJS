@@ -2,16 +2,18 @@ body {
     background-color: rgb(2, 49, 49);
 }
 
-button{
+button {
     margin: 2px;
     width: 100px;
 }
 
 #painelCompleto {
     background-color: aquamarine;
-    display: flex; /*Posicionar o display onde quiser*/
-    flex-direction: row; /*Posicionamento em formas de linhas*/
-    width: 600px;
+    display: flex;
+    /*Posicionar o display onde quiser*/
+    flex-direction: row;
+    /*Posicionamento em formas de linhas*/
+    width: 1000px;
     margin: auto;
     /* flex-wrap: nowrap; */
 }
@@ -28,25 +30,49 @@ button{
     flex-direction: column;
 }
 
+.buttonPesquisar {
+    width: auto;
+    border-radius: 1px;
+}
+
 #painelPesquisaTv {
     margin: 1%;
-    width: 500px;
+    width: 100vw;
+    max-width: 800px;
     height: auto;
     background-color: aqua;
     text-align: center;
     padding: 10px;
 }
 
+
 #painelPesquisa {
     background-color: blueviolet;
     margin: 10px;
     padding: 10%;
-    display: flex;
+    /* display: flex; */
     flex-direction: row;
+    align-items: center;
+}
+
+.buttonPesquisar {
+    width: auto;
+    border-radius: 0px;
+}
+
+.inputPesquisar {
+    margin-right: 0px;
 }
 
 #painelTV {
     background-color: blue;
     margin: 10px;
-    padding: 10%;
+    padding: 1px;
+    max-width: 800px;
+}
+
+#iframeTv {
+    width: 100%;
+    height: 400px;
+    margin: 0%;
 }
