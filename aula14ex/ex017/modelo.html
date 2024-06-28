@@ -4,21 +4,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modelo de exercício</title>
+    <title>Tabuada</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
 </head>
 
 <body>
     <header>
-        <h1>Título</h1>
+        <h1>Tabuada</h1>
     </header>
     <section>
         <div>
-            Div1
+            Digite aqui o número da Tabuada <input type="number" name="numeroTabuada" id="numeroTabuada">
+            <input type="button" value="Mostrar Valores" onclick="mostrarTabuada()">
         </div>
-        <div>
-            Div2
+        <div id="resultado">
+            <!-- <p id="res"></p> -->
+            <select name="" id="res" size="11">
+                <option value="">Digite para mostrar aqui a Tabela</option>
+            </select>
         </div>
     </section>
     <footer>
