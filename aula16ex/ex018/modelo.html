@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista</title>
+    <script src="./modelo.js"></script>
+    <link rel="stylesheet" href="modelo.css">
+</head>
+
+<body>
+    <header>
+        <h1>Lista Estrutura de Dados</h1>
+    </header>
+    <section id="cadastrarLista">
+        <br>
+        <div id="inserindoNumero">
+            <p>
+                <input type="number" name="inserirNumero" id="inserirNumero">
+                <input type="button" value="Inserir número na Lista" onclick="inserirLista()">
+            </p>
+        </div>
+        <div id="numeroInserido">
+            <p>
+                <select name="listaNumeros" id="listaNumeros" size="10">
+                </select>
+            </p>
+            <p id="listaBotoes">
+                <input type="button" value="Limpar Lista" onclick="limparLista()">
+                <input type="button" value="Ordem Crescente" id="crescenteLista" disabled onclick="crescenteLista()">
+            </p>
+        </div>
+        </br>
+    </section>
+    <section id="listaCadastrada">
+        <h1>Lista Cadastrada</h1>
+        <div id="resultado">
+        </div>
+    </section>
+    <footer>
+
+    </footer>
+</body>
+
+</html>
