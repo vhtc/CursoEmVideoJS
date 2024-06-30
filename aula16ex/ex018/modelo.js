@@ -13,15 +13,16 @@ function inserirLista() {
         lista.push(numero)
         resultado.innerHTML = `<p>${lista}</p>`
         selectLista.appendChild(item)
-        item.text=`Adicionado ${numero}`
+        item.text = `Adicionado ${numero}`
+
+        window.document.getElementById('crescenteLista').disabled = false
 
     } else {
         alert('[ERRO] Valor já existe na lista!')
     }
-    window.document.getElementById('crescenteLista').disabled = false
 }
 
-function limparLista(){
+function limparLista() {
     let selectLista = document.getElementById('listaNumeros')
     let resultado = document.getElementById('resultado')
     selectLista.innerHTML = ''
